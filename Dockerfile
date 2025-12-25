@@ -1,8 +1,6 @@
 FROM ubuntu:22.04
 
-RUN useradd bov -m -s /bin/bash
-
-RUN echo "vpn-ssh" > /etc/hostname
+RUN mkdir /root/.ssh/
 
 RUN apt update && apt install -y \
     wireguard \
@@ -13,7 +11,6 @@ RUN apt update && apt install -y \
     openresolv \
     && apt clean
 
-COPY wg0.conf /etc/wireguard/wg0.conf
 COPY entrypoint.sh /entrypoint.sh
 
 RUN chmod +x /entrypoint.sh
