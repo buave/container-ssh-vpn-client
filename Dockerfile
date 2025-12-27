@@ -9,6 +9,7 @@ RUN apt update && apt install -y \
     openssh-client \
     curl \
     openresolv \
+    vim \
     && apt clean
 
 COPY entrypoint.sh /entrypoint.sh
