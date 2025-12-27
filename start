@@ -1,9 +1,0 @@
-#!/bin/bash
-
-docker run \
-	--rm \
-	-it \
-	--cap-add=NET_ADMIN \
-	-v ~/.wg/athena.conf:/etc/wireguard/wg0.conf \
-	-v ~/Documents/projet-perso/vpn-ssh-client/config:/root/.ssh/config \
-	vpn-ssh-client
