@@ -32,3 +32,11 @@ If you want to build the image yourself
 ```bash
 docker build . -t vpn-ssh-client
 ```
+
+---
+
+## TODO
+
+- Change text in English
+- Create alias to skip fingerprint
+ 
