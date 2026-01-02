@@ -37,6 +37,5 @@ docker build . -t vpn-ssh-client
 
 ## TODO
 
-- Change text in English
 - Create alias to skip fingerprint
  

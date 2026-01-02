@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
 
-echo "[+] Démarrage WireGuard..."
+echo "[+] Starting WireGuard..."
 wg-quick up wg0
 
-echo "[+] VPN actif. Container prêt."
+echo "[+] VPN activate. Container ready."
 su -
